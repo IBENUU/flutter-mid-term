@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'graphic.dart';
+import 'task.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,7 +60,7 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
               items: const <BottomNavigationBarItem>[
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.favorite), label: "Task"),
+                    icon: Icon(Icons.assignment), label: "Task"),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.settings), label: "Graphic"),
                 BottomNavigationBarItem(
@@ -131,7 +132,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TaskCard(
-                        icon: Icons.dangerous,
+                        icon: Icons.computer,
                         name: "Completed",
                         task: "86 Task",
                         bgColor: Color(0xFF7DC8E7)),
@@ -139,7 +140,7 @@ class HomePage extends StatelessWidget {
                       width: 20,
                     ),
                     TaskCard(
-                        icon: Icons.dangerous,
+                        icon: Icons.access_time,
                         name: "Pending",
                         task: "15 Task",
                         bgColor: Color(0xFF7D88E7)),
@@ -152,7 +153,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TaskCard(
-                        icon: Icons.dangerous,
+                        icon: Icons.close_rounded,
                         name: "Canceled",
                         task: "15 Task",
                         bgColor: Color(0xFFE77D7D)),
@@ -160,7 +161,7 @@ class HomePage extends StatelessWidget {
                       width: 20,
                     ),
                     TaskCard(
-                        icon: Icons.dangerous,
+                        icon: Icons.book,
                         name: "On Going",
                         task: "67 Task",
                         bgColor: Color(0xFF81E89E)),
@@ -216,18 +217,4 @@ class TaskCard extends StatelessWidget {
   }
 }
 
-class TaskPage extends StatelessWidget {
-  const TaskPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          "This is a Favorite page",
-          style: TextStyle(fontSize: 40),
-        ),
-      ),
-    );
-  }
-}

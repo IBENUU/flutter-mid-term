@@ -115,7 +115,7 @@ class GraphicPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.only(right: 20, left: 20, bottom: 70 ),
           child: Column(
             children: [
               const Padding(padding: EdgeInsets.only(top: 10)),

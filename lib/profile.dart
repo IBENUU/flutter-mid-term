@@ -102,7 +102,7 @@ class _ProfileState extends State<ProfilePage> {
               const SizedBox(height: 10),
               Text(
                 title,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: TextStyle(fontSize: 15, ),
               )
             ],
           ),

@@ -50,7 +50,7 @@ class _ProfileState extends State<ProfilePage> {
         Container(
           color: Theme.of(context).primaryColor,
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
             decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
